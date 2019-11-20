@@ -15,11 +15,15 @@
             <div class="links">
                 <a href="">Menu</a>
                 <a href="git">git</a>
-                <a href="{{route('mostrarFormulario')}}">Crear Tienda</a>
+                <a href="">Crear Tienda</a>
             </div>
             <hr><br><br>
             <div class="op">
-                @yield('content')
+               {{$nombre}}<br>
+               {{$descripcion}}<br>
+               {{$password}}<br>
+               {{$email}}<br>
+               {{$likes}}<br>
             </div>
         </div>
     </div>

@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('tiendas/create','ShopController@create')->name('tiendas.create');
 Route::post('tiendas/store','ShopController@store')->name('tiendas.store');
 Route::get('productos/index','ProductController@index')->name('productos.index');
+
+Route::get('/formularioInsercion', 'formularioController@mostrarFormulario')->name('mostrarFormulario');
+Route::get('/datosFormulario', 'formularioController@mostrarDatosFormulario')->name('mostrarInfo');
