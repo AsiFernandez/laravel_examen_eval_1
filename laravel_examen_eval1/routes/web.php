@@ -23,4 +23,4 @@ Route::post('tiendas/store','ShopController@store')->name('tiendas.store');
 Route::get('productos/index','ProductController@index')->name('productos.index');
 
 Route::get('/formularioInsercion', 'formularioController@mostrarFormulario')->name('mostrarFormulario');
-Route::get('/datosFormulario', 'formularioController@mostrarDatosFormulario')->name('mostrarInfo');
+Route::get('/datosFormulario/{nombre}/{descripcion}/{password}/{email}/{likes}', 'formularioController@mostrarDatosFormulario')->name('mostrarInfo');
